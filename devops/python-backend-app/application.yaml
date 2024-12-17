@@ -5,8 +5,8 @@ metadata:
   name: python-backend-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: ducdat2411/python-backend-app:dev
-    argocd-image-updater.argoproj.io/python-backend-app.update-strategy: digest
+    argocd-image-updater.argoproj.io/image-list: ducdat2411/python-backend-app:e2f00b3
+    argocd-image-updater.argoproj.io/python-backend-app.update-strategy: latest
     argocd-image-updater.argoproj.io/write-back-method: git
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -23,7 +23,7 @@ spec:
         - name: "image.repository"
           value: ducdat2411/python-backend-app
         - name: "image.tag"
-          value: "dev"
+          value: "e2f00b3"
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
