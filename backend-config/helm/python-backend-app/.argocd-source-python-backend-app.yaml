@@ -7,7 +7,7 @@ helm:
     value: ducdat2411/python-backend-app
     forcestring: false
   - name: image.tag
-    value: v0.1.0
+    value: v0.1.1
     forcestring: true
   - name: image.name
     value: ducdat2411/python-backend-app
