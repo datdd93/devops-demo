@@ -89,3 +89,10 @@ kubectl get secrets argocd-initial-admin-secret -o yaml -n argocd
 
 ssh -fNL 8080:localhost:8080 ec2-user@98.81.240.79
 
+## Create secrets
+
+k apply -f python-backend-app/repo-secret.yaml
+
+## Create argocd application
+
+k apply -f python-backend-app/application.yaml
