@@ -47,8 +47,9 @@ docker build -t python-backend-app .
 
 To tag the Docker image and push it to Docker Hub, run the following commands:
 ```
-docker tag python-backend-app ducdat2411/python-backend-app:latest
-docker push ducdat2411/python-backend-app:latest
+image_tag=`date +%H%M%S`
+docker tag python-backend-app ducdat2411/python-backend-app:$image_tag
+docker push ducdat2411/python-backend-app:$image_tag
 ```
 
 To run the Docker container, use:
