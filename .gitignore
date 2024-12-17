@@ -10,5 +10,4 @@ override.tf.json
 .terraform/
 terraform.tfstate.backup
 
-*repo-secret.yaml
 devops/terraform/.terraform.lock.hcl
