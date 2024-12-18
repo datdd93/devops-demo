@@ -16,7 +16,7 @@ To access the Jenkins UI, open your web browser and navigate to `http://localhos
 
 Or from SSH Local Portforward: 
 
-ssh -fNL 9090:localhost:9090 ec2-user@98.81.240.79
+ssh -fNL 9090:localhost:9090 ec2-user@3.87.208.95
 
 # Setup demo env
 
@@ -87,7 +87,7 @@ kubectl get secrets argocd-initial-admin-secret -o yaml -n argocd
 
 ## Local Port Forward
 
-ssh -fNL 8080:localhost:8080 ec2-user@98.81.240.79
+ssh -fNL 8080:localhost:8080 ec2-user@3.87.208.95
 
 ## Create secrets
 
